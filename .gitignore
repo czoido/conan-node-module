@@ -1,0 +1,7 @@
+.DS_Store
+build
+conan_build
+node_modules
+.vscode
+10.1.5
+bin

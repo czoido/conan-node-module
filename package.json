@@ -1,0 +1,17 @@
+{
+  "name": "conan-node-module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "nan": "^2.14.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true
+}
