@@ -4,8 +4,5 @@ yaml-cpp/0.6.3
 [generators]
 node_gyp
 
-[build_requires]
-gyp-generator/0.1
-
 [options]
 yaml-cpp:shared=True
