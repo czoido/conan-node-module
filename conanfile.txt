@@ -3,6 +3,7 @@ yaml-cpp/0.6.3
 
 [generators]
 node_gyp
+virtualrunenv
 
 [options]
 yaml-cpp:shared=True
