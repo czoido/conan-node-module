@@ -10,7 +10,6 @@ generated conanbuildinfo.gyp in your project adding the dependencies in the bind
     "targets": [{
         "target_name": "conan_node_module",
         "sources": ["main.cpp"],
-        "include_dirs": ["<!(node -e \"require('nan')\")"],
         "dependencies": ["<(module_root_dir)/conan_build/conanbuildinfo.gyp:yaml-cpp"],
         "conditions": [[
             "OS=='mac'", {
@@ -28,6 +27,8 @@ git clone git@github.com:czoido/conan-node-module.git
 mkdir conan_build && cd conan_build
 conan install .. && cd ..
 npm install
+source conan_build/activate_run.sh # activate virtualrunenv to set DYLD_LIBRARY_PATH so that it finds dependencies .so
+node index.js # simple node application that ouputs the size of the list
 ```
 
 If you are using this module in electron you may want to build for it:
