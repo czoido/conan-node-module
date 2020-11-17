@@ -2,6 +2,8 @@
 
 This project is just a simple example on how a Conan custom generator can be used to handle dependencies when working with native node modules compiled with node-gyp.
 
+Find some more detailed information in [this blogpost](https://czoido.github.io/posts/node-native-module-conan/).
+
 The conan generator for this project is in: https://github.com/czoido/conan-gyp-generator Include the
 generated conanbuildinfo.gyp in your project adding the dependencies in the bindings.gyp file:
 
